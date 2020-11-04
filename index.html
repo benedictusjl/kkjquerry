@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>jQuery Tailwind Checkbox Toggle Plugin Examples</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/tailwind.min.css" rel="stylesheet" />
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <style>
+    :not(pre)>code[class*=language-], pre[class*=language-] { background: rgba(0,0,0,0.25); }
+  </style>
+
+</head>
+<body class="bg-gray-900 text-gray-100 leading-tight">
+  <header class="mb-16 text-center" style="margin-top:150px">
+    <h1 class="mb-2 text-white font-light">jQuery Tailwind Checkbox Toggle Plugin Examples</h1>
+    <p class="mb-8 opacity-50">A tiny and fast jQuery plugin that helps developers create checkbox based on/off switches in the latest Tailwind CSS framework.</p>
+    <p class="mb-8 opacity-50"> Benedictus Jullian Pradana (311810007) <br> Marcelino Centauri Dwi P. (311810020)</p>
+  </header>
+
+  <main>
+  <!-- Bentuk tombol juga bisa drubah pada tag label -->
+  <!-- <label -->
+  <!-- data-toggle="checkbox-toggle" -->
+  <!-- data-rounded="rounded" -->
+  <!-- data-handle-size="20" -->
+  <!-- data-handle-color="bg-white" -->
+  <!-- data-off-color="bg-gray-400" -->
+  <!-- data-on-color="bg-blue-600"> -->
+  <!-- <input type="checkbox" /> -->
+  <!-- </label> -->
+  
+    <section class="mx-auto max-w-md">
+      <h3 class="p-1 px-2 bg-gray-900 uppercase opacity-25 rounded">Demo</h3>
+      <ul class="list-reset mb-16">
+        <li class="py-4 flex items-center">
+          <label for="some-ch1" class="flex-1 cursor-pointer hover:text-white">Normal</label> 
+          <label class="ml-auto text-right" data-toggle="checkbox-toggle"><input type="checkbox" id="some-ch1" /></label>
+        </li>
+        <li class="py-4 flex items-center">
+          <label for="some-ch3" class="flex-1 cursor-pointer hover:text-white">Styley</label> 
+          <label class="ml-auto text-right" data-toggle="checkbox-toggle" data-rounded="rounded-sm" data-handle-color="bg-red-400" data-off-color="bg-red-900" data-on-color="bg-red-300"><input type="checkbox" id="some-ch3" /></label>
+        </li>
+        <li class="py-4 flex items-center">
+          <label for="some-ch4" class="flex-1 cursor-pointer hover:text-white">Disabled</label> 
+          <label class="ml-auto text-right" data-toggle="checkbox-toggle"><input type="checkbox" id="some-ch4" checked disabled /></label>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="jquery-tailwind-toggle.js"></script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+</body>
+</html>
